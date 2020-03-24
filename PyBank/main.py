@@ -11,8 +11,6 @@ import csv
 # Final script should print both the analysis to the terminal and export a text file with the results.
 
 # Path to collect data from the Resources folder
-# C:\Users\tenko\Documents\GitHub\python-challenge\PyBank\Resources\budget_data.csv
-# C:\Users\tenko\Documents\GitHub\python-challenge\PyBank\main.py
 budget_data_csv = os.path.join('Resources','budget_data.csv')
 
 # Can approach this problem by reading the file and adding each row to list
@@ -27,7 +25,7 @@ average = 0
 incrIndex = 0
 decrIndex = 0
 
-# Read in the cvs file
+# Read in the csv file
 with open(budget_data_csv) as csvfile:
 
     # Split the data on the commas
@@ -36,9 +34,8 @@ with open(budget_data_csv) as csvfile:
     # Skip header
     next(csvfile)
 
-    # # Use loop to add .csv file data to the list row-by-row
-    # for row in csvreader:
-    #     data.append(row)
+    # Use loop to add .csv file data to the list row-by-row
+    # Can do this with list comprehension
     data = [row for row in csvreader]
 
 # Debugging purpose: Check if rows were properly added to the list
