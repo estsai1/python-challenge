@@ -12,8 +12,8 @@ import csv
 
 # Specify path of the election_data.csv file
 # Will use absolute path for now, change it to relative path at the end
-election_data_csv = 'C:\\Users\\tenko\\Documents\\GitHub\\python-challenge\\PyPoll\\Resources\test_data.csv'
-# election_data_csv = os.path.join('Resources', 'election_data.csv')
+# election_data_csv = 'C:\\Users\\tenko\\Documents\\GitHub\\python-challenge\\PyPoll\\Resources\election_data.csv'
+election_data_csv = os.path.join('.', 'Resources', 'election_data.csv')
 
 # Make a list to collect results
 results = []
@@ -112,8 +112,8 @@ def writeTextFile(candidates, votes, totalVotes, winner):
 
     # First specify a path for the output
     # Use absolute path for now, will fix to relative path at the end
-    output_path = 'C:\\Users\\tenko\\Documents\\GitHub\\python-challenge\\PyPoll\\election_results.txt'
-    # output_path = os.path.join('.', 'election_results.tx')
+    # output_path = 'C:\\Users\\tenko\\Documents\\GitHub\\python-challenge\\PyPoll\\election_results.txt'
+    output_path = os.path.join('.', 'election_results.txt')
 
     # Make a list to hold output
     output = []
